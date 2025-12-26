@@ -1,7 +1,7 @@
 //components/loginFormComponents.tsx
 import styles from "../../styles/formStyle.module.css";
 import { Link } from "react-router-dom";
-import { Login, Registration } from "../../Service/FormService";
+import { Registration } from "../../Service/FormService";
 import { useState } from "react";
 
 const RegistrationComponent = () => {
@@ -76,9 +76,12 @@ const RegistrationComponent = () => {
         LastName,
         Email,
       });
+        console.log(result)
     } catch (error) {
       console.error("Registration error:", error);
     }
+        
+
   };
   return (
     <>
